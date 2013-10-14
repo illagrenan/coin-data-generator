@@ -25,9 +25,6 @@ def main():
 
     result = str(args_from_console.coin_count) + u" " + u" ".join(str(x) for x in list_of_random_integers)
 
-    for one_random_number in list_of_random_integers:
-        result += u" " + str(one_random_number)
-
     result_filename = u'data/result.txt'
 
     with open(result_filename, u'a') as the_file:
